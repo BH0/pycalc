@@ -12,11 +12,11 @@ def calc(calc_input):
     str_code = str(code)
     # to handle division, I will simply replace the word div with "/" - ideally the user should be able to simply type "/" - maybe this would be done on the AHK (client end) 
     div = "div"
-    if div in str_t:
+    if div in str_code:
         final_code = str_code.replace("div", "/")
         print ('word found')
     else:
-      final_t = str_code
+      final_code = str_code
     output = eval(final_code) 
     return f"output {output}"
 
